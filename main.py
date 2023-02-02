@@ -29,5 +29,6 @@ root.insert('a')
 root.insert('b')
 root.insert('c')
 root.insert('d')
+root.insert('q')
 root.insert('e')
 

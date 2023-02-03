@@ -52,8 +52,10 @@ def fill_tree(self, t = 100, w = 1000):
             tree.insert(elem)
         return tree
     
-            
+# tree is the instance of the class Binary Search Tree
+# while Binary Search Tree is the structure / class/ blueprint
 tree = Binary_Search_Tree()
+
 tree = fill_tree(tree)
 tree.print_tree()
 

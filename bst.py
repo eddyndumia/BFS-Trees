@@ -56,7 +56,10 @@ def fill_tree(self, t = 100, w = 1000):
 # while Binary Search Tree is the structure / class/ blueprint
 tree = Binary_Search_Tree()
 
+# fill tree is a function that fills the instances with the data in a nonlinear format in storage
+
 tree = fill_tree(tree)
+
 tree.print_tree()
 
 

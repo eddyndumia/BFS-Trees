@@ -24,19 +24,22 @@ class Binary_Search_Tree:
         
     def _insert(self, value, cur_node):
         
-        if value < self.cur_node:
-            if self.leftnode is None:
-                self.leftnode = Node(value)
+        # check the value of the root of the object from class Node which is #value
+        if value < cur_node.value:
+            #if value of #current root node/leaf is greater than the value we have, we assign it to the left node of this current node
+            if cur_node.leftnode is None:
+                cur_node.leftnode = Node(value)
             else:
-                self._insert(value, self.leftnode)
-        elif value > self.cur_node:
+                self._insert(value, cur_node.leftnode)
+        elif value > cur_node.value:
+            #if value of #current root node/leaf is greater than the value we have, we assign it to the left node of this current node
             #check if right node has a value
-            if self.rightnode is None:
+            if cur_node.rightnode is None:
                 #if it does not have a value, start another instance of the class with the rightnode as the root
-                self.rightnode = Node(value)
+                    cur_node.rightnode = Node(value)
             else:
                 #else recursively insert using the private function _insert
-                self._insert(value, self.rightnode)
+                self._insert(value, cur_node.rightnode)
                 
                 #if value already in tree
         else:
@@ -44,21 +47,21 @@ class Binary_Search_Tree:
             
             
     def print_tree(self):
-        self.root != None:
+        if self.root is not None:
             self.__print_tree(self.root)
             
-    def __print_tree(self, cur_node):
-        if self.cur_node is not None:
-            __print_tree(cur_node.leftnode)
-            print(str(self.cur_node))
-            __print_tree(cur_node.right)
+        def __print_tree(self, cur_node):
+            if self.cur_node is not None:
+             __print_tree(cur_node.leftnode)
+             print(str(self.cur_node))
+             __print_tree(cur_node.right)
             
-    def fill_tree(self, maxint=100, maxelem=1000):
-        from random import randint 
-        for _ in range(maxint):
-            elems = radint(0, maxelem)
-            tree.insert(maxelem)
-        return tree
+def fill_tree(self, maxint=100, maxelem=1000):
+    from random import randint 
+    for _ in range(maxint):
+        elems = randint(0,maxelem)
+        tree.insert(elems)
+    return tree
         
         
 tree = Binary_Search_Tree()

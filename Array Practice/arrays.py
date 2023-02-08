@@ -82,3 +82,36 @@ print(my_array)
 
 print(my_array.index(21))
 print(my_array[13])
+
+
+# 10. Reversing an array sequence using reverse method
+
+my_array.reverse()
+print(my_array)
+
+# 11. Gettting buffer_info using buffer method
+
+print("buffer info:", my_array.buffer_info())
+
+
+# 12. Count method counts the number of times an element has occurred in an array
+
+my_array.append(21)
+
+print('21 has occurred', my_array.count(21),'times')
+
+
+# 13. Converting an array to string using tostring 
+
+'''
+There is no difference, tostring they are both aliases to the same method, tostring was renamed to tobytes for the purposes for clarity 
+in Python 3.2, as mentioned in the documentation
+
+tostring has been kept for backwards compatibility, but the use of tostring is deprecated.
+'''
+
+strTemp = my_array.tobytes()
+
+ints = array('i')
+ints.frombytes(strTemp)
+print(ints)

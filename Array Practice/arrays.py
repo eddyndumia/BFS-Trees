@@ -53,3 +53,10 @@ my_array.extend(extension_array)
 
 print('There have been changes to your array:', my_array)
 
+# 6. Inserting array element at the end of an array from a list
+
+tempList = [20,21,22,23,24,25]
+
+my_array.fromlist(tempList)
+
+print('There have been changes to you array. Added Items: ', my_array)

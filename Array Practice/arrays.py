@@ -32,9 +32,16 @@ for i in my_array:
 print('Second item is:')
 print(my_array[1]) # O(1) time and space complexity
 
-# 3. Appending(inserting) an element to the end of the array
+# 3. Appending(inserting) an element to the end of the array using append()
 
 my_array.append(6) # O(1) time complexity
 print('You inserted:', my_array[len(my_array) - 1])
 
-    
+# 4. Inserting element into array using insert() method
+
+# insert() adds an element at a given index, which is very time consuming since the other elements have to shift
+
+my_array.insert(1, 8)
+
+print('You inserted:', my_array[1])
+

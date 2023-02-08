@@ -47,16 +47,27 @@ print('You inserted:', my_array[1])
 
 # 5. Extending an array from another array using .extend()
 
-extension_array = array('i', [10, 11, 12, 13])
+extension_array = array('i', [10, 11, 12, 13, 11])
 
 my_array.extend(extension_array)
 
 print('There have been changes to your array:', my_array)
 
-# 6. Inserting array element at the end of an array from a list
+# 6. Inserting array element at the end of an array from a list using fromList()
 
 tempList = [20,21,22,23,24,25]
 
 my_array.fromlist(tempList)
 
 print('There have been changes to you array. Added Items: ', my_array)
+
+
+# 7. Removing an element using remove()
+
+my_array.remove(11)
+
+# removes the first occurrence of the element in the array and pushes the other elements to the left
+# uses O(n) time complexity, O(1) space complexity
+print(my_array)
+
+#. 8

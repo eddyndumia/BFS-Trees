@@ -18,11 +18,17 @@
 from array import *
 
 
-# Create array and traverse
+#1. Create array and traverse
 
-my_array = array('i', [1,2,3,4,5,6])
+my_array = array('i', [1,2,3,4,5,6]) # O(n) space and time complexity
 
 # traverse
 
 for i in my_array:
-    print(i)
+    print(i) # O(n) time complexity, O(1) space complexity
+    
+# 2. Access individual array elements using indexes
+
+print('Second item is:')
+print(my_array[1]) # O(1) time and space complexity
+    

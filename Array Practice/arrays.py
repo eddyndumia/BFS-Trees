@@ -115,3 +115,12 @@ strTemp = my_array.tobytes()
 ints = array('i')
 ints.frombytes(strTemp)
 print(ints)
+
+
+# 14. Converting array to list using tolist method
+
+listTemp = my_array.tolist()
+
+print(listTemp)
+
+

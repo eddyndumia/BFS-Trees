@@ -56,7 +56,7 @@ class Binary_Search_Tree:
              print(str(self.cur_node))
              __print_tree(cur_node.right)
             
-def fill_tree(self, maxint=100, maxelem=1000):
+def fill_tree(tree, maxint=100, maxelem=1000):
     from random import randint 
     for _ in range(maxint):
         elems = randint(0,maxelem)

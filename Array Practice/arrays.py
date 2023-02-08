@@ -45,3 +45,11 @@ my_array.insert(1, 8)
 
 print('You inserted:', my_array[1])
 
+# 5. Extending an array from another array using .extend()
+
+extension_array = array('i', [10, 11, 12, 13])
+
+my_array.extend(extension_array)
+
+print('There have been changes to your array:', my_array)
+

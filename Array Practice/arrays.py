@@ -76,3 +76,9 @@ my_array.pop()
 
 # very time efficient as no elements are pushed to the left, O(1) time and space complexity
 print(my_array)
+
+
+# 9. Fetching an elements index 
+
+print(my_array.index(21))
+print(my_array[13])

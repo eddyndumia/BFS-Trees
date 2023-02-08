@@ -70,4 +70,9 @@ my_array.remove(11)
 # uses O(n) time complexity, O(1) space complexity
 print(my_array)
 
-#. 8
+#. 8 Removing the last element from the array
+
+my_array.pop()
+
+# very time efficient as no elements are pushed to the left, O(1) time and space complexity
+print(my_array)

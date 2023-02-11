@@ -43,4 +43,48 @@ class Binary_Search_Tree:
         if self.root is None:
             self.root = Node(value)
         else:
+            self._insert(value, self.root)
+    
+    def _insert(self, value_ins, cur_node):
+        if value_ins < cur_node.value:
+            if cur_node.left_node is None:
+                cur_node.left_node = Node(value_ins)
+            else:
+                self._insert(value_ins, cur_node.left_node)
+                
+        elif value_ins > cur_node.right_node:
+            if cur_node.right_node is None:
+                cur_node.right_node = Node(value_ins)
+            else:
+                self._insert(value_ins, cur_node.right_node)
+                
+        else:
+            print('value already inserted xD')
+        
+        
+    def print_tree(self):
+        if self.root is not None:
+            self._print_tree(self.root)
             
+            
+        def _print_tree(self, cur_node):
+            if cur_node is not None:
+                _print_tree(cur_node.left_node)
+                print(str(cur_node.value))
+                _print_tree(cur_node.right_node)
+        
+        
+
+def fill_tree (self, maxelem=100, maxint=1000):
+    from random import randint
+        
+    for _ in range(maxelem):
+        input_elems = randint(0, maxint)
+        tree.insert(input_elems)
+    return tree
+    
+tree = Binary_Search_Tree()
+
+tree = fill_tree(tree)
+
+tree.print_tree

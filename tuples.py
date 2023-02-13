@@ -32,3 +32,18 @@ go_signal = '3' in mytuple2
 
 if go_signal:
     print("GO GO GO GO")
+    
+    
+    
+    
+# searching for an elemnt in a tuple
+
+
+def search_for_element_in_tuple(P_tuple, S_element):
+    for i in P_tuple:
+        if S_element == i:
+            return P_tuple.index(i)
+    return "does not exist"
+
+print('2 is in index:', search_for_element_in_tuple(mytuple,'2'))
+print('index 1 is:', mytuple2[1])
